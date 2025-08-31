@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FinalProject.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>iPortfolio Bootstrap Template - Index</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
+
+<!-- Favicons -->
+       
+<link href="WebImage/logoblck.png" rel="icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="Content/assets/vendor/aos/aos.css" rel="stylesheet" />
+
+<link href="Content/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="Content/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="Content/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="Content/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="Content/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="Content/assets/css/style.css" rel="stylesheet">
+
+<!-- =======================================================
+* Template Name: iPortfolio
+* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Updated: Mar 17 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+======================================================== -->
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    
+
+</head>
+<body>
+    <form runat="server">
+
+         <!-- ======= Mobile nav toggle button ======= -->
+<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+<!-- ======= Header ======= -->
+<header id="header">
+  <div class="d-flex flex-column">
+
+    <div class="profile">
+       
+      <img src="WebImage/logoblck.png" alt="" class="img-fluid rounded-circle">
+      <h1 class="text-light"><a href="index.html">Alex Smith</a></h1>
+      <div class="social-links mt-3 text-center">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+
+    <nav id="navbar" class="nav-menu navbar">
+      <ul>
+        <li><asp:HyperLink ID="LinkHome" runat="server"  class="nav-link scrollto active" NavigateUrl="~/Default.aspx"><i class="bx bx-home"></i> <span>Home</span></asp:HyperLink></li>
+        <li><asp:HyperLink ID="LinkAbout" runat="server" class="nav-link scrollto active" NavigateUrl="~/About.aspx"><i class="bx bx-home"></i> <span>About</span></asp:HyperLink></li>
+        <li><asp:HyperLink ID="LinkExplore" runat="server" class="nav-link scrollto active" NavigateUrl="~/Portfolio.aspx"><i class="bx bx-home"></i> <span>Explore</span></asp:HyperLink></li>
+        <li><asp:HyperLink ID="LinkContact" runat="server" class="nav-link scrollto active" NavigateUrl="~/Contact.aspx"><i class="bx bx-home"></i> <span>Contact Us</span></asp:HyperLink></li>
+        <li><asp:HyperLink ID="LinkCreateAccount" runat="server" class="nav-link scrollto active" NavigateUrl="~/UserRegister.aspx"><i class="bx bx-home"></i> <span>Create an Account</span></asp:HyperLink></li>
+        <li><asp:HyperLink ID="LinkLogIn" runat="server" class="nav-link scrollto active" NavigateUrl="~/UserLogin.aspx"><i class="bx bx-home" ></i> <span>Log In</span></asp:HyperLink></li>
+        <li><asp:HyperLink ID="LinkLogOut" runat="server" class="nav-link scrollto active" ><i class="bx bx-home"></i> <span>Log Out</span></asp:HyperLink></li>
+        <li><asp:HyperLink ID="LinkAdminPanel" runat="server" class="nav-link scrollto active" NavigateUrl="~/AdminPanel.aspx"><i class="bx bx-home"></i> <span>Admin Panel</span></asp:HyperLink></li>
+        <li><asp:HyperLink ID="LinkClientData" runat="server" class="nav-link scrollto active" NavigateUrl="~/ClientData.aspx"><i class="bx bx-home"></i> <span>Client Record</span></asp:HyperLink></li>
+        <li><asp:HyperLink ID="LinkControlPanel" runat="server" class="nav-link scrollto active" NavigateUrl="~/ControlPanel.aspx"><i class="bx bx-home"></i> <span>Control Panel</span></asp:HyperLink></li>
+        
+      </ul>
+    </nav><!-- .nav-menu -->
+  </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center" style="background-image: url('/WebImage/frontpage.png'); background-repeat: no-repeat; background-attachment: fixed">
+  <div class="hero-container" data-aos="fade-in">
+    <h1>Alex Smith</h1>
+    <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+  </div>
+</section><!-- End Hero -->
+ 
+      
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+      
+<script src="Content/assets/js/main.js"></script>
+
+            <!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>iPortfolio</span></strong>
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+</footer><!-- End  Footer -->
+            
+  <!-- Vendor JS Files -->
+  <script src="Content/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="Content/assets/vendor/aos/aos.js"></script>
+  <script src="Content/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="Content/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="Content/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="Content/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="Content/assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="Content/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="Content/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="Content/assets/js/main.js"></script>
+        </div>
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>
